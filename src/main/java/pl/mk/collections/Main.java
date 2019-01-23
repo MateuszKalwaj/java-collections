@@ -15,6 +15,12 @@ public class Main {
         System.out.println();
         cave.printNamesAndColors();
         System.out.println();
+        cave.dragonOldest();
+        System.out.println();
+        cave.dragonLargestWings();
+        System.out.println();
+        cave.dragonCharsInLongestName();
+        System.out.println();
     }
 
 
