@@ -21,6 +21,11 @@ public class Main {
         System.out.println();
         cave.dragonCharsInLongestName();
         System.out.println();
+        cave.dragonfetchColor(Dragon.Color.WHITE);
+        System.out.println();
+        cave.dragonfetchName();
+        System.out.println();
+        cave.dragonColorUpperList();
     }
 
 

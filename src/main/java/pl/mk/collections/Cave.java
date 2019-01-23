@@ -1,8 +1,10 @@
 package pl.mk.collections;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Cave {
 
@@ -56,5 +58,20 @@ public class Cave {
                 .map(Dragon::getName)
                 .mapToInt(String::length)
                 .max().orElse(0);
+    }
+
+    public List<Dragon> dragonfetchColor(Dragon.Color color) {
+        List<Dragon.Color> colorList = Arrays.asList(color);
+        return dragonList.stream().filter(dragon -> colorList.contains(dragon.getColor())).collect(Collectors.toList());
+    }
+
+    public List<String> dragonfetchName() {
+        return dragonList.stream().map(Dragon::getName).collect(Collectors.toList());
+    }
+
+    public List<Dragon.Color> dragonColorUpperList() {
+        return dragonList.stream().map((Dragon::getColor)).collect(Collectors.toList());
+        dragonList.replaceAll(String::toUpperCase);
+
     }
 }
