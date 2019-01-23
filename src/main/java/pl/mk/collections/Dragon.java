@@ -12,7 +12,7 @@ public class Dragon implements Comparable<Dragon> {
     private String name;
     private Color color;
 
-    public Dragon(int age, int wingsPan, String name, Color color) {
+    public Dragon(Color color, int age, int wingsPan, String name) {
         this.age = age;
         this.wingsPan = wingsPan;
         this.name = name;

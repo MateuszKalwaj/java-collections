@@ -1,6 +1,7 @@
 package pl.mk.collections;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Cave {
@@ -21,5 +22,19 @@ public class Cave {
 
     public void deleteDragon (Dragon dragon) {
         dragonList.remove(dragon);
+    }
+
+    public void printAll() {
+        dragonList.forEach(System.out::println);
+    }
+    public void printNames() {
+        dragonList.stream().map(Dragon::getName).forEach(System.out::println);
+    }
+    public void printNamesAndColors() {
+        dragonList.stream()
+                .sorted(Comparator.comparing(Dragon::getName))
+                .map(dragon -> dragon.getName() + ", " +
+                        dragon.getColor().toString().toLowerCase())
+                .forEach(System.out::println);
     }
 }
