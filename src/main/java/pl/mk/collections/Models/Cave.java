@@ -1,4 +1,4 @@
-package pl.mk.collections;
+package pl.mk.collections.Models;
 
 import java.util.ArrayList;
 import java.util.Arrays;

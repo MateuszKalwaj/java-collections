@@ -1,6 +1,9 @@
 package pl.mk.collections;
 
 
+import pl.mk.collections.Models.Cave;
+import pl.mk.collections.Models.Dragon;
+
 public class Main {
 
     public static void main(String[] args) {
