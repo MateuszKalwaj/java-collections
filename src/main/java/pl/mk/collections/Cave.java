@@ -73,23 +73,24 @@ public class Cave {
         return dragonList.stream().map((Dragon::getColor)).collect(Collectors.toList());
     }
 
-    public List<Dragon> fetchNaturalSorted(){
+    public List<Dragon> fetchNaturalSorted() {
         return dragonList.stream().sorted().collect(Collectors.toList());
     }
+
     public List<Dragon> fetchByAge() {
         return dragonList.stream()
                 .sorted(Comparator.comparingInt(Dragon::getAge))
                 .collect(Collectors.toList());
     }
 
-    public boolean AgeValidation (int age) {
+    public boolean AgeValidation(int age) {
         boolean validation = dragonList.stream()
                 .map(Dragon::getAge)
                 .anyMatch(value -> value == age);
         return validation;
     }
 
-    public boolean ColorValidation (Dragon.Color color) {
+    public boolean ColorValidation(Dragon.Color color) {
         boolean validation = dragonList.stream()
                 .map(Dragon::getColor)
                 .anyMatch(value -> value == color);
@@ -111,7 +112,6 @@ public class Cave {
                 .map(DragonEgg::new)
                 .collect(Collectors.toList());
     }
-
 
 
 }

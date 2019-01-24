@@ -7,6 +7,7 @@ public class Dragon implements Comparable<Dragon> {
     public enum Color {
         WHITE, BLACK, GOLD, SILVER, RED
     }
+
     private int age;
     private int wingsPan;
     private String name;

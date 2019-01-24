@@ -12,9 +12,10 @@ public class DragonEgg {
     public void setColor(Dragon.Color color) {
         this.color = color;
     }
+
     //Constructor creating an egg based on a dragon passed as a parameter
     public DragonEgg(Dragon dragon) {
-        this.color = getColor();
+        this.color = dragon.getColor();
     }
 
     @Override
