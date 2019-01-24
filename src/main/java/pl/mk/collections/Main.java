@@ -6,26 +6,22 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Dragon cave is now open \n");
 
-        //necessary to have all dragons in new cave
+        //necessary to have all dragons in a new cave
         Cave cave = addDragons();
 
-        cave.printAll();
+            cave.printAll();
         System.out.println();
-        cave.printNames();
+            cave.printNames();
         System.out.println();
-        cave.printNamesAndColors();
+            cave.printNamesAndColors();
         System.out.println();
-        cave.dragonOldest();
+            cave.dragonOldest();
         System.out.println();
-        cave.dragonLargestWings();
-        System.out.println();
-        cave.dragonCharsInLongestName();
-        System.out.println();
-        cave.dragonfetchColor(Dragon.Color.WHITE);
-        System.out.println();
-        cave.dragonfetchName();
-        System.out.println();
-        cave.dragonColorUpperList();
+        System.out.println(cave.dragonLargestWings());
+        System.out.println(cave.dragonCharsInLongestName());
+        System.out.println(cave.dragonfetchColor(Dragon.Color.WHITE));
+        System.out.println(cave.dragonfetchName());
+        System.out.println(cave.dragonColorUpperList());
     }
 
 

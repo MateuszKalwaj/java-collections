@@ -71,7 +71,6 @@ public class Cave {
 
     public List<Dragon.Color> dragonColorUpperList() {
         return dragonList.stream().map((Dragon::getColor)).collect(Collectors.toList());
-        dragonList.replaceAll(String::toUpperCase);
-
     }
+
 }
