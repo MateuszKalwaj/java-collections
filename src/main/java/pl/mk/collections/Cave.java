@@ -73,4 +73,14 @@ public class Cave {
         return dragonList.stream().map((Dragon::getColor)).collect(Collectors.toList());
     }
 
+    public List<Dragon> fetchNaturalSorted(){
+        return dragonList.stream().sorted().collect(Collectors.toList());
+    }
+    public List<Dragon> fetchByAge() {
+        return dragonList.stream()
+                .sorted(Comparator.comparingInt(Dragon::getAge))
+                .collect(Collectors.toList());
+    }
+
+
 }

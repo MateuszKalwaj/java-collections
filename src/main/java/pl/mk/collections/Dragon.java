@@ -76,10 +76,10 @@ public class Dragon implements Comparable<Dragon> {
     @Override
     public String toString() {
         return "Dragon{" +
-                "age=" + age +
-                ", wingsPan=" + wingsPan +
-                ", name='" + name + '\'' +
-                ", color=" + color +
+                "color=" + color +
+                ", age=" + age +
+                ", wingspan='" + wingsPan + '\'' +
+                ", name=" + name +
                 '}';
     }
 

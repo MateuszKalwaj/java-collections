@@ -9,19 +9,24 @@ public class Main {
         //necessary to have all dragons in a new cave
         Cave cave = addDragons();
 
-            cave.printAll();
-        System.out.println();
-            cave.printNames();
-        System.out.println();
-            cave.printNamesAndColors();
-        System.out.println();
-            cave.dragonOldest();
-        System.out.println();
+        cave.printAll();
+            System.out.println();
+        cave.printNames();
+            System.out.println();
+        cave.printNamesAndColors();
+            System.out.println();
+        System.out.println(cave.dragonOldest());
+            System.out.println();
         System.out.println(cave.dragonLargestWings());
         System.out.println(cave.dragonCharsInLongestName());
+            System.out.println();
         System.out.println(cave.dragonfetchColor(Dragon.Color.WHITE));
         System.out.println(cave.dragonfetchName());
         System.out.println(cave.dragonColorUpperList());
+            System.out.println();
+        cave.fetchNaturalSorted().forEach(System.out::println);
+            System.out.println();
+        cave.fetchByAge().forEach(System.out::println);
     }
 
 
