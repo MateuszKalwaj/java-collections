@@ -9,6 +9,7 @@ public class Main {
         //necessary to have all dragons in a new cave
         Cave cave = addDragons();
 
+        //Answers 8 - 12
         cave.printAll();
             System.out.println();
         cave.printNames();
@@ -27,6 +28,10 @@ public class Main {
         cave.fetchNaturalSorted().forEach(System.out::println);
             System.out.println();
         cave.fetchByAge().forEach(System.out::println);
+        System.out.println();
+        System.out.println(cave.AgeValidation(100));
+        System.out.println();
+        System.out.println(cave.ColorValidation(Dragon.Color.BLACK));
     }
 
 

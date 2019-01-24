@@ -82,5 +82,20 @@ public class Cave {
                 .collect(Collectors.toList());
     }
 
+    public boolean AgeValidation (int age) {
+        boolean validation = dragonList.stream()
+                .map(Dragon::getAge)
+                .anyMatch(value -> value == age);
+        return validation;
+    }
+
+    public boolean ColorValidation (Dragon.Color color) {
+        boolean validation = dragonList.stream()
+                .map(Dragon::getColor)
+                .anyMatch(value -> value == color);
+        return validation;
+    }
+
+
 
 }
