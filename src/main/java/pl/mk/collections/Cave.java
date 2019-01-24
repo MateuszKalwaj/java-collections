@@ -96,6 +96,22 @@ public class Cave {
         return validation;
     }
 
+    public List<DragonEgg> dragonEggList() {
+        return dragonList.stream()
+                .map(DragonEgg::new)
+                .collect(Collectors.toList());
+    }
+
+    public List<DragonEgg> wingspanEgglist(int wingspan) {
+        List<Dragon> wingspanDragonList;
+        wingspanDragonList = dragonList.stream()
+                .filter(dragon -> dragon.getWingsPan() > wingspan)
+                .collect(Collectors.toList());
+        return wingspanDragonList.stream()
+                .map(DragonEgg::new)
+                .collect(Collectors.toList());
+    }
+
 
 
 }

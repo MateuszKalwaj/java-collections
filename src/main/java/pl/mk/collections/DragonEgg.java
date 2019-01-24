@@ -22,7 +22,8 @@ public class DragonEgg {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         DragonEgg dragonEgg = (DragonEgg) o;
-        return color == dragonEgg.color;
+        //return color == dragonEgg.color;
+        return getColor() == dragonEgg.getColor();
     }
 
     @Override

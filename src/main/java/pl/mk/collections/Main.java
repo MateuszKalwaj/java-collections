@@ -28,10 +28,15 @@ public class Main {
         cave.fetchNaturalSorted().forEach(System.out::println);
             System.out.println();
         cave.fetchByAge().forEach(System.out::println);
-        System.out.println();
+            System.out.println();
         System.out.println(cave.AgeValidation(100));
-        System.out.println();
+            System.out.println();
         System.out.println(cave.ColorValidation(Dragon.Color.BLACK));
+            System.out.println();
+        cave.dragonEggList().forEach(System.out::println);
+            System.out.println();
+        cave.wingspanEgglist(24).forEach(System.out::println);
+
     }
 
 
